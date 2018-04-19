@@ -36,9 +36,9 @@ app.use(function(req, res, next) {
 app.use(logger(':remote-addr :remote-user :method :url HTTP/:http-version :status :res[content-length] - :response-time ms'));
 
 //react-production html serving function
-app.use(express.static(path.join(__dirname, 'shards-master')));
+app.use(express.static(path.join(__dirname, 'html')));
 app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'shards-master', 'index.html'));
+    res.sendFile(path.join(__dirname, 'html', 'index.html'));
   });
 
 //** Endpoints ---------**
