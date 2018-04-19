@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Documentation | CryptoMag HTML</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700%7CRoboto:400,700' rel='stylesheet'>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body data-spy="scroll" data-offset="60" data-target=".navbar" class="relative">
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">Loading...</div>
+  </div>
+
+  <div class="main-wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul class="local-scroll nav navbar-nav">
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#crypto-api">Crypto API</a></li>
+        <li><a href="#credits">Credits</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu Icon -->
+    <button class="menu-icon" id="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu Icon Close -->
+    <button class="menu-icon-close" id="menu-icon-close">
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Content -->
+    <div class="content-wrapper oh">
+
+      <header>
+        <h1>CryptoMag HTML Documentation</h1>
+        <p>Thank you for purchasing our template. If you have any questions regarding our product feel free to visit our <a href="http://deothemes.com/support/forums" target="_blank">support forum</a></p>
+      </header>
+
+      <hr>
+
+      <h1 class="section-title" id="getting-started">Getting Started</h1>
+      <p>Unzip files from archive and you will find following folders and files.</p>
+      <ul>
+        <li><strong>/css</strong> - folder with css files</li>
+        <li><strong>/fonts</strong> - folder with icon fonts</li>
+        <li><strong>/img</strong> - folder with all images</li>
+        <li><strong>/js</strong> - folder with jQuery script files</li>
+        <li><strong>contact.php</strong> - file for contact form</li>
+      </ul>
+      <p class="note">Note: Contact form will not work offline. You must upload your website on a server with support of PHP and PHP mail() function.</p>
+
+
+      <h1 class="section-title" id="crypto-api">Cryptocurrency Market API</h1>
+      <p>Check the API settings here - <a href="https://coinmarketcap.com/api/">Cryptocurrency Market API</a></p>
+      <ul>
+        <li>Endpoint: /ticker/</li>
+        <li>Method: GET</li>
+        <li>Optional parameters:</li>
+          <ul>
+            <li>(int) start - return results from rank [start] and above</li>
+            <li>(int) limit - return a maximum of [limit] results (default is 100, use 0 to return all results)</li>
+            <li>(string) convert - return price, 24h volume, and market cap in terms of another currency. Valid values are: 
+      "AUD", "BRL", "CAD", "CHF", "CLP", "CNY", "CZK", "DKK", "EUR", "GBP", "HKD", "HUF", "IDR", "ILS", "INR", "JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PKR", "PLN", "RUB", "SEK", "SGD", "THB", "TRY", "TWD", "ZAR"</li>
+          </ul>
+        <li>Example: https://api.coinmarketcap.com/v1/ticker/</li>
+        <li>Example: https://api.coinmarketcap.com/v1/ticker/?limit=10</li>
+        <li>Example: https://api.coinmarketcap.com/v1/ticker/?start=100&limit=10</li>
+        <li>Example: https://api.coinmarketcap.com/v1/ticker/?convert=EUR&limit=10</li>
+      </ul>
+      <hr>
+      <h5>Sample Response:</h5>
+      <pre><code class="language-markup">
+        [
+            {
+                "id": "bitcoin",
+                "name": "Bitcoin",
+                "symbol": "BTC",
+                "rank": "1",
+                "price_usd": "573.137",
+                "price_btc": "1.0",
+                "24h_volume_usd": "72855700.0",
+                "market_cap_usd": "9080883500.0",
+                "available_supply": "15844176.0",
+                "total_supply": "15844176.0",
+                "percent_change_1h": "0.04",
+                "percent_change_24h": "-0.3",
+                "percent_change_7d": "-0.57",
+                "last_updated": "1472762067"
+            },
+            {
+                "id": "ethereum",
+                "name": "Ethereum",
+                "symbol": "ETH",
+                "rank": "2",
+                "price_usd": "12.1844",
+                "price_btc": "0.021262",
+                "24h_volume_usd": "24085900.0",
+                "market_cap_usd": "1018098455.0",
+                "available_supply": "83557537.0",
+                "total_supply": "83557537.0",
+                "percent_change_1h": "-0.58",
+                "percent_change_24h": "6.34",
+                "percent_change_7d": "8.59",
+                "last_updated": "1472762062"
+            },
+            ...
+        ]  
+      </code></pre>
+
+
+      <!-- Colors -->
+      <h1 class="section-title" id="colors">Changing Colors</h1>
+      <p>You can change the main color of theme using Sass. The process described here - <a href="https://deothemes.com/blog/article/how-to-use-sass-in-our-templates.html/" target="_blank">link</a></p>
+
+
+      <h1 class="section-title" id="credits">Credits</h1>
+      <ul>
+        <li><a href="http://jquery.com/">jQuery</a></li>
+        <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+        <li><a href="https://github.com/gdsmith/jquery.easing">Easing</a></li>
+        <li><a href="https://github.com/aFarkas/lazysizes">Lazyload</a></li>
+        <li><a href="http://owlgraphic.com/owlcarousel/">Owl carousel</a></li>
+        <li><a href="https://isotope.metafizzy.co/">Isotope / ImagesLoaded</a></li>
+        <li><a href="https://modernizr.com/">Modernizr</a></li>
+      </ul>
+
+
+      <h1 class="section-title" id="support">Support</h1>
+      <p>If you have any question feel free to visit our <a href="http://deothemes.com/support/forums" target="_blank">Support Forum</a></p>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="copyright">
+          <span>
+            &copy; 2018 CryptoMag | Made by <a href="http://deothemes.com">DeoThemes</a>
+          </span>
+        </div>
+      </footer> <!-- end footer -->
+
+
+    </div> <!-- end content wrapper -->
+  </div> <!-- end main wrapper -->
+
+  <!-- jQuery Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>

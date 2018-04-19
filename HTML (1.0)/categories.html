@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CryptoMag | Categories</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="">
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,400i,700%7CRubik:300,400,500' rel='stylesheet'>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Lazyload -->
+  <script src="js/lazysizes.min.js"></script>
+
+</head>
+
+<body class="category">
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+    </div>
+  </div>
+  
+  <!-- Bg Overlay -->
+  <div class="content-overlay"></div>
+
+  <!-- Subscribe Modal -->
+  <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="subscribeModalLabel">Don't miss the latest news from the cryptocurrency world</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="mc4wp-form" method="post">
+            <div class="mc4wp-form-fields">
+              <div class="form-group">
+                <i class="mc4wp-form-icon ui-email"></i>
+                <input type="email" name="EMAIL" placeholder="Your email" required="">
+              </div>
+              <input type="submit" class="btn btn-md btn-color btn-block" value="Subscribe">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end subscribe modal -->
+
+  <!-- Sidenav -->    
+  <header class="sidenav" id="sidenav">
+
+    <!-- close -->
+    <div class="sidenav__close">
+      <button class="sidenav__close-button" id="sidenav__close-button" aria-label="close sidenav">
+        <i class="ui-close sidenav__close-icon"></i>
+      </button>
+    </div>
+    
+    <!-- Nav -->
+    <nav class="sidenav__menu-container">
+      <ul class="sidenav__menu" role="menubar">
+        <li class="active">
+          <a href="index.html" class="sidenav__menu-link">Home</a>
+        </li>
+
+        <li>
+          <a href="#" class="sidenav__menu-link">Posts</a>
+          <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
+          <ul class="sidenav__menu-dropdown">
+            <li><a href="single-post-gallery.html" class="sidenav__menu-link">Gallery Post</a></li>
+            <li><a href="single-post.html" class="sidenav__menu-link">Video Post</a></li>
+            <li><a href="single-post.html" class="sidenav__menu-link">Audio Post</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="sidenav__menu-link">Pages</a>
+          <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
+          <ul class="sidenav__menu-dropdown">
+            <li><a href="about.html" class="sidenav__menu-link">About</a></li>
+            <li><a href="contact.html" class="sidenav__menu-link">Contact</a></li>
+            <li><a href="search-results.html" class="sidenav__menu-link">Search Results</a></li>
+            <li><a href="categories.html" class="sidenav__menu-link">Categories</a></li>
+            <li><a href="404.html" class="sidenav__menu-link">404</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="sidenav__menu-link">Features</a>
+          <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
+          <ul class="sidenav__menu-dropdown">
+            <li><a href="lazyload.html" class="sidenav__menu-link">Lazy Load</a></li>
+            <li><a href="shortcodes.html" class="sidenav__menu-link">Shortcodes</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="sidenav__menu-link">Purchase</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="socials sidenav__socials"> 
+      <a class="social social--small social-facebook" href="#" target="_blank" aria-label="facebook">
+        <i class="ui-facebook"></i>
+      </a>
+      <a class="social social--small social-twitter" href="#" target="_blank" aria-label="twitter">
+        <i class="ui-twitter"></i>
+      </a>
+      <a class="social social--small social-google-plus" href="#" target="_blank" aria-label="google">
+        <i class="ui-google"></i>
+      </a>
+      <a class="social social--small social-youtube" href="#" target="_blank" aria-label="youtube">
+        <i class="ui-youtube"></i>
+      </a>
+      <a class="social social--small social-instagram" href="#" target="_blank" aria-label="instagram">
+        <i class="ui-instagram"></i>
+      </a>
+    </div>
+  </header> <!-- end sidenav -->
+
+  <main class="main oh" id="main">
+
+    <!-- Ticker -->
+    <div class="ticker d-none d-lg-block">
+      <div class="ticker__list crypto-rates marquee" data-duration="60000" data-direction="left"></div>
+    </div> <!-- end ticker -->
+
+    <!-- Header -->
+    <div class="header">
+      <div class="container">
+        <div class="flex-parent align-items-center">
+
+          <!-- Mobile Toggle Button -->
+          <button class="nav-icon-toggle d-lg-none" id="nav-icon-toggle" aria-label="Open side menu">
+            <span class="nav-icon-toggle__box">
+              <span class="nav-icon-toggle__inner"></span>
+            </span>
+          </button> <!-- end mobile toggle button -->
+          
+          <!-- Logo -->
+          <a href="index.html" class="logo">
+            <img class="logo__img" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
+          </a>
+
+          <!-- Search -->
+          <div class="nav__mobile-search d-lg-none">
+            <a href="#" class="nav__search-trigger">
+              <i class="ui-search nav__search-trigger-icon"></i>
+            </a>                
+          </div>
+
+          <!-- Search form -->
+          <form role="search" method="get" class="nav__search-form d-lg-none">
+            <input type="search" class="nav__search-input" placeholder="Type &amp; Hit Enter">
+            <i class="ui-close nav__search-close"></i>
+          </form> 
+
+          <!-- Ad Banner 728 -->
+          <div class="header__ad text-center d-lg-block d-none">
+            <a href="#">
+              <img src="img/blog/placeholder_leaderboard.jpg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div> <!-- end header -->
+
+    <!-- Navigation -->
+    <header class="nav d-lg-block d-none">
+
+      <div class="nav__holder">
+        <div class="container relative">
+          <div class="flex-parent">
+
+            <!-- Search form -->
+            <form role="search" method="get" class="nav__search-form">
+              <input type="search" class="nav__search-input" id="nav__search-input" placeholder="Type &amp; Hit Enter">
+              <i class="ui-close nav__search-close" id="nav__search-close"></i>
+            </form>            
+
+            <!-- Nav-wrap -->
+            <nav class="flex-child nav__wrap d-none d-lg-block">              
+              <ul class="nav__menu">
+
+                <li class="active">
+                  <a href="index.html">Home</a>
+                </li>
+
+                <li class="nav__dropdown">
+                  <a href="#">Posts</a>
+                  <ul class="nav__dropdown-menu">
+                    <li><a href="single-post.html">Standard Post</a></li>
+                    <li><a href="single-post-gallery.html">Gallery Post</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav__dropdown">
+                  <a href="#">Pages</a>
+                  <ul class="nav__dropdown-menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="search-results.html">Search Results</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="404.html">404</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav__dropdown">
+                  <a href="#">Features</a>
+                  <ul class="nav__dropdown-menu">
+                    <li><a href="lazyload.html">Lazy Load</a></li>
+                    <li><a href="shortcodes.html">Shortcodes</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">Purchase</a>
+                </li>
+
+              </ul> <!-- end menu -->
+            </nav> <!-- end nav-wrap -->
+
+            <!-- Nav Right -->
+            <div class="nav__right nav--align-right d-none d-lg-flex">
+
+              <!-- Socials -->
+              <div class="nav__right-item socials nav__socials"> 
+                <a class="social social-facebook social--nobase" href="#" target="_blank" aria-label="facebook">
+                  <i class="ui-facebook"></i>
+                </a>
+                <a class="social social-twitter social--nobase" href="#" target="_blank" aria-label="twitter">
+                  <i class="ui-twitter"></i>
+                </a>
+                <a class="social social-google social--nobase" href="#" target="_blank" aria-label="google">
+                  <i class="ui-google"></i>
+                </a>
+                <a class="social social-youtube social--nobase" href="#" target="_blank" aria-label="youtube">
+                  <i class="ui-youtube"></i>
+                </a>
+              </div>
+
+              <!-- Subscribe -->
+              <div class="nav__right-item nav__subscribe">
+                <a href="#" class="nav__subscribe-url" data-toggle="modal" data-target="#subscribe-modal">Subscribe</a>
+              </div>
+
+              <!-- Search -->
+              <div class="nav__right-item nav__search">
+                <a href="#" class="nav__search-trigger" id="nav__search-trigger">
+                  <i class="ui-search nav__search-trigger-icon"></i>
+                </a>                
+              </div>
+
+            </div> <!-- end nav right -->  
+        
+          </div> <!-- end flex-parent -->
+        </div> <!-- end container -->
+
+      </div>
+    </header> <!-- end navigation -->
+
+    <!-- Content -->      
+    <section class="section-wrap main-content">
+      <div class="container">
+        <h1 class="page-title h2">Investment</h1>
+
+        <div class="row" id="isotope-grid">
+              
+          <div class="col-lg-4 col-md-6">
+            <article class="entry">
+              <a href="categories.html" class="entry__meta-category">education</a>
+              <div class="entry__img-holder">
+                <a href="single-post.html">
+                  <div class="thumb-container thumb-65">
+                    <img data-src="img/blog/post_1_large.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="entry__body">
+                <div class="entry__header">
+                  <h2 class="entry__title entry__title--medium">
+                    <a href="single-post.html">Growth Hacking Your ICO – 7 Steps to Successful Token Sale</a>
+                  </h2>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <a href="#">
+                        <span>by</span>
+                        <span class="entry__meta-author-name">DeoThemes</span>
+                      </a>
+                    </li>
+                    <li class="entry__meta-date">21 October, 2018</li>
+                  </ul>
+                </div>
+                <div class="entry__excerpt">
+                  <p>To some people, the blockchain technology is a lot more promising than the cryptocurrency it was designed to support.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="entry">
+              <a href="categories.html" class="entry__meta-category">mining</a>
+              <div class="entry__img-holder">
+                <a href="single-post.html">
+                  <div class="thumb-container thumb-65">
+                    <img data-src="img/blog/post_2_large.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="entry__body">
+                <div class="entry__header">
+                  <h2 class="entry__title entry__title--medium">
+                    <a href="single-post.html">How to Buy Litecoin: Get your First Digital Silver</a>
+                  </h2>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <a href="#">
+                        <span>by</span>
+                        <span class="entry__meta-author-name">DeoThemes</span>
+                      </a>
+                    </li>
+                    <li class="entry__meta-date">21 October, 2018</li>
+                  </ul>
+                </div>
+                <div class="entry__excerpt">
+                  <p>To some people, the blockchain technology is a lot more promising than the cryptocurrency it was designed to support.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <!-- Widget Newsletter -->
+            <div class="widget widget_mc4wp_form_widget">
+              <h4 class="widget-title">Subscribe for News</h4>
+              <form class="mc4wp-form" method="post">
+                <div class="mc4wp-form-fields">
+                  <div class="form-group">
+                    <i class="ui-email"></i>
+                    <input type="email" name="EMAIL" placeholder="Your email" required="">
+                  </div>
+                  <input type="submit" class="btn btn-md btn-color" value="Subscribe">
+                </div>
+              </form>
+            </div> <!-- end widget newsletter -->
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="d-block mb-40">
+              <img src="img/blog/placeholder_386.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="entry">
+              <a href="categories.html" class="entry__meta-category">investment</a>
+              <div class="entry__img-holder">
+                <a href="single-post.html">
+                  <div class="thumb-container thumb-65">
+                    <img data-src="img/blog/post_3_large.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="entry__body">
+                <div class="entry__header">
+                  <h2 class="entry__title entry__title--medium">
+                    <a href="single-post.html">Changelly: The Simple Way to Get on Board with Cryptocurrency</a>
+                  </h2>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <a href="#">
+                        <span>by</span>
+                        <span class="entry__meta-author-name">DeoThemes</span>
+                      </a>
+                    </li>
+                    <li class="entry__meta-date">21 October, 2018</li>
+                  </ul>
+                </div>
+                <div class="entry__excerpt">
+                  <p>To some people, the blockchain technology is a lot more promising than the cryptocurrency it was designed to support.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <article class="entry">
+              <a href="categories.html" class="entry__meta-category">investment</a>
+              <div class="entry__img-holder">
+                <a href="single-post.html">
+                  <div class="thumb-container thumb-65">
+                    <img data-src="img/blog/post_4_large.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="entry__body">
+                <div class="entry__header">
+                  <h2 class="entry__title entry__title--medium">
+                    <a href="single-post.html">The Simple Way to Get on Board with Cryptocurrency</a>
+                  </h2>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <a href="#">
+                        <span>by</span>
+                        <span class="entry__meta-author-name">DeoThemes</span>
+                      </a>
+                    </li>
+                    <li class="entry__meta-date">21 October, 2018</li>
+                  </ul>
+                </div>
+                <div class="entry__excerpt">
+                  <p>To some people, the blockchain technology is a lot more promising than the cryptocurrency it was designed to support.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="entry">
+              <a href="categories.html" class="entry__meta-category">investment</a>
+              <div class="entry__img-holder">
+                <a href="single-post.html">
+                  <div class="thumb-container thumb-65">
+                    <img data-src="img/blog/post_5_large.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="entry__body">
+                <div class="entry__header">
+                  <h2 class="entry__title entry__title--medium">
+                    <a href="single-post.html">The Simple Way to Get on Board with Cryptocurrency</a>
+                  </h2>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <a href="#">
+                        <span>by</span>
+                        <span class="entry__meta-author-name">DeoThemes</span>
+                      </a>
+                    </li>
+                    <li class="entry__meta-date">21 October, 2018</li>
+                  </ul>
+                </div>
+                <div class="entry__excerpt">
+                  <p>To some people, the blockchain technology is a lot more promising than the cryptocurrency it was designed to support.</p>
+                </div>
+              </div>
+            </article>
+          </div>       
+        
+        </div> <!-- end row -->
+        
+        <!-- Pagination -->
+        <nav class="pagination">
+          <div class="pagination__link text-center">
+            <a href="#" class="btn btn-lg btn-color">
+              <span>Older posts</span>
+            </a>
+          </div>
+        </nav>
+
+      </div> <!-- end container -->
+    </section> <!-- end main content -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__widgets">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+              <div class="widget">
+                <a href="index.html">
+                  <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" class="logo__img" alt="">
+                </a>
+                <p class="mt-20 mb-30">Cryptocurrency news blog and investment strategy guide. All you need to know about ICOs, education, reviews, mining, and more.</p>
+                <div class="socials">
+                  <a href="#" class="social social-facebook" aria-label="facebook"><i class="ui-facebook"></i></a>
+                  <a href="#" class="social social-twitter" aria-label="twitter"><i class="ui-twitter"></i></a>
+                  <a href="#" class="social social-google-plus" aria-label="google+"><i class="ui-google"></i></a>
+                  <a href="#" class="social social-youtube" aria-label="youtube"><i class="ui-youtube"></i></a>
+                  <a href="#" class="social social-instagram" aria-label="instagram"><i class="ui-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-md-6">
+              <div class="widget donate">
+                <h4 class="widget-title">Donate</h4>
+                <ul class="donate__list">
+                  <li class="donate__item"><span class="donate__label">BTC:</span> 3CMCRgEm8HVz3DrWaCCid3vAANE42jcEv9</li>
+                  <li class="donate__item"><span class="donate__label">LTC:</span> LTdsVS8VDw6syvfQADdhf2PHAm3rMGJvPX</li>
+                  <li class="donate__item"><span class="donate__label">ETH:</span> 0x0074709077B8AE5a245E4ED161C971Dc4c3C8E2B</li>
+                </ul>
+              </div>
+            </div>            
+
+            <div class="col-lg-3 col-md-6">
+              <div class="widget widget_nav_menu">
+                <h4 class="widget-title">Useful Links</h4>
+                <ul>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="blog.html">Advertise</a></li>
+                  <li><a href="shortcodes.html">FAQ</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>            
+
+          </div>
+        </div>    
+      </div> <!-- end container -->
+
+      <div class="footer__bottom">
+        <div class="container text-center">
+          <span class="copyright">
+            &copy; 2018 CryptoMag | Made by <a href="http://deothemes.com">DeoThemes</a>
+          </span>          
+        </div>
+      </div> <!-- end bottom footer -->
+    </footer> <!-- end footer -->
+
+    <div id="back-to-top">
+      <a href="#top" aria-label="Go to top"><i class="ui-arrow-up"></i></a>
+    </div>
+
+  </main> <!-- end main-wrapper -->
+
+  
+  <!-- jQuery Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/easing.min.js"></script>
+  <script src="js/jquery.marquee.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/owl-carousel.min.js"></script> 
+  <script src="js/modernizr.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
