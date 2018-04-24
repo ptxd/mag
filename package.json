@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,8 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
     "nodemon": "^1.17.3"
   }
 }
