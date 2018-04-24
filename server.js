@@ -20,7 +20,7 @@ const app = express();
 // }).then(db => app.set('db',db));
 
 //** Port numbers ---------**
-const port = process.env.PORT || 15000;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
