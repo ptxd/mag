@@ -41,7 +41,7 @@ before_install:
 script:
   - npm install
   - npm test
-  - npm build
+  - npm start
 
 cache:
   directories:
