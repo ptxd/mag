@@ -1,0 +1,4 @@
+{
+    "telemetry.enableTelemetry": false,
+    "git.ignoreLimitWarning": true,
+}
