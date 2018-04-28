@@ -50,7 +50,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form class="mc4wp-form" method="post">
+          <form class="mc4wp-form" action="http://localhost:3000/subscribe" method="POST" onsubmit="alert('Thank You For Subscribing!');return false">
             <div class="mc4wp-form-fields">
               <div class="form-group">
                 <i class="mc4wp-form-icon ui-email"></i>
@@ -81,12 +81,15 @@
           <a href="index.html" class="sidenav__menu-link">Home</a>
         </li>
         <li>
-          <a href="#" class="sidenav__menu-link">Posts</a>
+          <a href="#" class="sidenav__menu-link">Crypto Sphere</a>
           <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
           <ul class="sidenav__menu-dropdown">
-            <li><a href="single-post-gallery.html" class="sidenav__menu-link">Gallery Post</a></li>
-            <li><a href="single-post.html" class="sidenav__menu-link">Video Post</a></li>
-            <li><a href="single-post.html" class="sidenav__menu-link">Audio Post</a></li>
+            <li><a href="single-post-gallery.html" class="sidenav__menu-link">Cryptocurrencies</a></li>
+            <li><a href="single-post.html" class="sidenav__menu-link">Blockchain</a></li>
+            <li><a href="single-post.html" class="sidenav__menu-link">Education</a></li>
+            <li><a href="single-post.html" class="sidenav__menu-link">Mining</a></li>
+            <li><a href="single-post.html" class="sidenav__menu-link">Crypto Markets</a></li>
+            <li><a href="single-post.html" class="sidenav__menu-link">ICO</a></li>
           </ul>
         </li>
 
@@ -96,8 +99,8 @@
           <ul class="sidenav__menu-dropdown">
             <li><a href="about.html" class="sidenav__menu-link">About</a></li>
             <li><a href="contact.html" class="sidenav__menu-link">Contact</a></li>
-            <li><a href="search-results.html" class="sidenav__menu-link">Search Results</a></li>
-            <li><a href="categories.html" class="sidenav__menu-link">Categories</a></li>
+            <!-- <li><a href="search-results.html" class="sidenav__menu-link">Search Results</a></li> -->
+            <!-- <li><a href="categories.html" class="sidenav__menu-link">Categories</a></li> -->
             <!-- <li><a href="404.html" class="sidenav__menu-link">404</a></li> -->
           </ul>
         </li>
@@ -124,8 +127,8 @@
       <a class="social social--small social-twitter" href="#" target="_blank" aria-label="twitter">
         <i class="ui-twitter"></i>
       </a>
-      <a class="social social--small social-google-plus" href="#" target="_blank" aria-label="google">
-        <i class="ui-google"></i>
+      <a class="social social--nobase" href="#" target="_blank" aria-label="telegram" style="padding-top:6px;">
+        <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z" class=""></path></svg></i>
       </a>
       <a class="social social--small social-youtube" href="#" target="_blank" aria-label="youtube">
         <i class="ui-youtube"></i>
@@ -173,7 +176,7 @@
             <i class="ui-close nav__search-close"></i>
           </form> 
 
-          <!-- Ad Banner 728 -->
+          <!-- Ad Banner 728 x 90 -->
           <div class="header__ad text-center d-lg-block d-none">
             <a href="#">
               <img src="img/blog/placeholder_leaderboard.jpg" alt="">
@@ -206,10 +209,14 @@
                 </li>
 
                 <li class="nav__dropdown">
-                  <a href="#">Posts</a>
+                  <a href="#">Crypto Sphere</a>
                   <ul class="nav__dropdown-menu">
-                    <li><a href="single-post.html">Standard Post</a></li>
-                    <li><a href="single-post-gallery.html">Gallery Post</a></li>
+                    <li><a href="single-post.html">Cryptocurrencies</a></li>
+                    <li><a href="single-post-gallery.html">Blockchain</a></li>
+                    <li><a href="single-post-gallery.html">Education</a></li>
+                    <li><a href="single-post-gallery.html">ICO</a></li>
+                    <li><a href="single-post-gallery.html">Mining</a></li>
+                    <li><a href="single-post-gallery.html">Crypto Markets</a></li>
                   </ul>
                 </li>
 
@@ -218,8 +225,8 @@
                   <ul class="nav__dropdown-menu">
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="search-results.html">Search Results</a></li>
-                    <li><a href="categories.html">Categories</a></li>
+                    <!-- <li><a href="search-results.html">Search Results</a></li> -->
+                    <!-- <li><a href="categories.html">Categories</a></li> -->
                     <!-- <li><a href="404.html">404</a></li> -->
                   </ul>
                 </li>
@@ -250,8 +257,8 @@
                 <a class="social social-twitter social--nobase" href="#" target="_blank" aria-label="twitter">
                   <i class="ui-twitter"></i>
                 </a>
-                <a class="social social-google social--nobase" href="#" target="_blank" aria-label="google">
-                  <i class="ui-google"></i>
+                <a class="social social--nobase" href="#" target="_blank" aria-label="telegram" style="padding-top:6px;">
+                  <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z" class=""></path></svg></i>
                 </a>
                 <a class="social social-youtube social--nobase" href="#" target="_blank" aria-label="youtube">
                   <i class="ui-youtube"></i>
@@ -289,15 +296,15 @@
             <!-- Featured Post -->
             <article class="entry">
               <div class="thumb-bg-holder thumb-container thumb-65">
-                <img data-src="img/blog/featured_post_img.jpg" src="img/empty.png" class="lazyload" alt="">
+                <img data-src="https://cdn.pixabay.com/photo/2018/01/15/09/35/bitcoin-3083578_960_720.jpg" src="img/empty.png" class="lazyload" alt="">
                 <a href="single-post.html" class="thumb-url"></a>
                 <div class="bottom-gradient"></div>
               </div>
 
               <div class="thumb-text-holder">
-                <a href="single-post.html" class="entry__meta-category">investment</a>   
+                <a href="single-post.html" class="entry__meta-category">The Guild</a>   
                 <h1 class="thumb-entry-title">
-                  <a href="single-post.html">Removing Bitcoin payments from Steam is a smart move by Valve</a>
+                  <a href="single-post.html">To the rebels</a>
                 </h1>
               </div>
             </article> <!-- end featured post -->
@@ -308,7 +315,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <article class="entry">
-                    <a href="categories.html" class="entry__meta-category">currency market</a>
+                    <a href="categories.html" class="entry__meta-category">Crypto Markets</a>
                     <div class="entry__img-holder">
                       <a href="single-post.html">
                         <div class="thumb-container thumb-75">
@@ -355,7 +362,7 @@
               <div class="row">
                 <div class="col-lg-4 col-md-6">
                   <article class="entry">
-                    <a href="categories.html" class="entry__meta-category">education</a>
+                    <a href="categories.html" class="entry__meta-category">Education</a>
                     <div class="entry__img-holder">
                       <a href="single-post.html">
                         <div class="thumb-container thumb-60">
@@ -374,7 +381,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                   <article class="entry">
-                    <a href="categories.html" class="entry__meta-category">investment</a>
+                    <a href="categories.html" class="entry__meta-category">Mining</a>
                     <div class="entry__img-holder">
                       <a href="single-post.html">
                         <div class="thumb-container thumb-60">
@@ -431,7 +438,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                   <article class="entry">
-                    <a href="categories.html" class="entry__meta-category">reviews</a>
+                    <a href="categories.html" class="entry__meta-category">Sponsored Review</a>
                     <div class="entry__img-holder">
                       <a href="single-post.html">
                         <div class="thumb-container thumb-60">
@@ -450,7 +457,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                   <article class="entry">
-                    <a href="categories.html" class="entry__meta-category">investment</a>
+                    <a href="categories.html" class="entry__meta-category">Sponsored Review</a>
                     <div class="entry__img-holder">
                       <a href="single-post.html">
                         <div class="thumb-container thumb-60">
@@ -521,8 +528,8 @@
                 --><a class="social social-twitter" href="#" title="twitter" target="_blank" aria-label="twitter">
                   <i class="ui-twitter"></i>
                 </a><!--
-                --><a class="social social-google-plus" href="#" title="google" target="_blank" aria-label="google">
-                  <i class="ui-google"></i>
+                --><a class="social social--nobase" href="#" target="_blank" aria-label="telegram" style="padding-top:6px;">
+                  <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z" class=""></path></svg></i>
                 </a><!--
                 --><a class="social social-instagram" href="#" title="instagram" target="_blank" aria-label="instagram">
                   <i class="ui-instagram"></i>
@@ -539,16 +546,21 @@
             <!-- Widget Newsletter -->
             <div class="widget widget_mc4wp_form_widget">
               <h4 class="widget-title">Subscribe for News</h4>
-              <form class="mc4wp-form" method="post">
+              <form class="mc4wp-form" action="http://localhost:3000/subscribe" method="POST" onsubmit="alert('Thank You For Subscribing!');return false">
                 <div class="mc4wp-form-fields">
                   <div class="form-group">
                     <i class="ui-email"></i>
                     <input type="email" name="EMAIL" placeholder="Your email" required="">
                   </div>
-                  <input type="submit" class="btn btn-md btn-color" value="Subscribe">
+                  <input type="submit" class="btn btn-md btn-color" value="submit">
                 </div>
               </form>
             </div> <!-- end widget newsletter -->
+            <script>
+              
+            </script>
+            
+            
 
             <!-- Widget Popular Posts -->
             <div class="widget widget-popular-posts">
@@ -558,7 +570,7 @@
                 <li class="widget-popular-posts__item">
                   <article>
                     <div class="widget-popular-posts__entry">
-                      <a href="categories.html" class="entry__meta-category">mining</a>
+                      <a href="categories.html" class="entry__meta-category">ICO</a>
                       <h3 class="widget-popular-posts__entry-title">
                         <a href="single-post.html">Bitcoin Fees: Possible Solutions and Scenarios</a>
                       </h3>
@@ -830,7 +842,7 @@
         </div>
 
         <div class="newsletter-wide__form">
-          <form class="mc4wp-form" method="post">
+          <form class="mc4wp-form" action="http://localhost:3000/subscribe" method="POST" onsubmit="alert('Thank You For Subscribing!');return false">
             <div class="mc4wp-form-fields">
               <div class="form-group">
                 <i class="ui-user"></i>
@@ -860,11 +872,13 @@
                 <a href="index.html">
                   <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" class="logo__img" alt="">
                 </a>
-                <p class="mt-20 mb-30">Cryptocurrency news blog and investment strategy guide. All you need to know about ICOs, education, reviews, mining, and more.</p>
+                <p class="mt-20 mb-30">All you need to know about Cryptocurrencies, Blockchain, ICOs, mining, and more.</p>
                 <div class="socials">
                   <a href="#" class="social social-facebook" aria-label="facebook"><i class="ui-facebook"></i></a>
                   <a href="#" class="social social-twitter" aria-label="twitter"><i class="ui-twitter"></i></a>
-                  <a href="#" class="social social-google-plus" aria-label="google+"><i class="ui-google"></i></a>
+                  <a class="social social--nobase" href="#" target="_blank" aria-label="telegram" style="padding-top:6px;">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z" class=""></path></svg></i>
+                  </a>
                   <a href="#" class="social social-youtube" aria-label="youtube"><i class="ui-youtube"></i></a>
                   <a href="#" class="social social-instagram" aria-label="instagram"><i class="ui-instagram"></i></a>
                 </div>
@@ -875,19 +889,19 @@
               <div class="widget donate">
                 <h4 class="widget-title">Donate</h4>
                 <ul class="donate__list">
-                  <li class="donate__item"><span class="donate__label">BTC:</span> 3CMCRgEm8HVz3DrWaCCid3vAANE42jcEv9</li>
-                  <li class="donate__item"><span class="donate__label">LTC:</span> LTdsVS8VDw6syvfQADdhf2PHAm3rMGJvPX</li>
-                  <li class="donate__item"><span class="donate__label">ETH:</span> 0x0074709077B8AE5a245E4ED161C971Dc4c3C8E2B</li>
+                  <li class="donate__item"><span class="donate__label">BTC:</span> 1CBpxdeQJqeWPKXUMMBkbUcZ1vyezEq57n</li>
+                  <!-- <li class="donate__item"><span class="donate__label">LTC:</span> LTdsVS8VDw6syvfQADdhf2PHAm3rMGJvPX</li> -->
+                  <li class="donate__item"><span class="donate__label">ETH:</span> 0xD8eDde674D2585b40Fd2E9DE8fa5372BE98B7E5c</li>
                 </ul>
               </div>
-            </div>            
+            </div>                
 
             <div class="col-lg-3 col-md-6">
               <div class="widget widget_nav_menu">
                 <h4 class="widget-title">Useful Links</h4>
                 <ul>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="blog.html">Advertise</a></li>
+                  <li><a href="contact.html">Advertise</a></li>
                   <li><a href="shortcodes.html">FAQ</a></li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -924,6 +938,6 @@
   <script src="js/owl-carousel.min.js"></script> 
   <script src="js/modernizr.min.js"></script>
   <script src="js/scripts.js"></script>
-
+  
 </body>
 </html>
