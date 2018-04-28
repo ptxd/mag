@@ -24,6 +24,7 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.text({ type: 'text/html' }))
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -33,7 +34,7 @@ app.use(function(req, res, next) {
 
   //Log requests to server console
 // app.use(logger(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
-app.use(logger(':remote-addr :remote-user :method :url HTTP/:http-version :status :res[content-length] - :response-time ms'));
+// app.use(logger(':remote-addr :remote-user :method :url HTTP/:http-version :status :res[content-length] - :response-time ms'));
 
 //react-production html serving function
 app.use(express.static(path.join(__dirname, 'html')));
@@ -43,10 +44,15 @@ app.get('/*', function (req, res) {
 
 //** Endpoints ---------**
 
+app.post('/subscribe', function(req,res){
+    console.log(req.body);
+    return res.status(200).send('accepted');
+})
+
 
 //** Server testing endpoints ---------**
 app.get('/getTest',function(req,res){
-    console.log('req');
+    console.log(req.body);
     return res.status(200).send(`test successful`);
 });
 
